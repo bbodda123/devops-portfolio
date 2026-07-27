@@ -129,7 +129,6 @@ export const Skills = () => {
               `Category: ${skill.category}`,
               `Proficiency: ${skill.level}%`,
               '',
-              `Icon: ${skill.icon}`,
             ];
           } else {
             output = [`Skill "${skillName}" not found`];

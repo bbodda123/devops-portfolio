@@ -14,7 +14,7 @@ export const SKILLS = [
     name: "Google Cloud",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
     category: "cloud",
-    level: 90,
+    level: 80,
   },
 
   // Containers
@@ -28,7 +28,7 @@ export const SKILLS = [
     name: "Kubernetes",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
     category: "containers",
-    level: 90,
+    level: 70,
   },
 
   // Infrastructure
@@ -56,7 +56,7 @@ export const SKILLS = [
     name: "Linux",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-plain.svg",
     category: "devops",
-    level: 90,
+    level: 80,
   },
   {
     name: "Jenkins",
@@ -83,40 +83,28 @@ export const SKILLS = [
     level: 90,
   },
   {
-    name: "AWS CodePipeline",
-    icon: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/awscodepipeline.svg",
-    category: "devops",
-    level: 90,
-  },
-  {
-    name: "AWS CodeBuild",
-    icon: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/awscodebuild.svg",
-    category: "devops",
-    level: 90,
-  },
-  {
     name: "Prometheus",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg",
     category: "devops",
-    level: 90,
+    level: 70,
   },
   {
     name: "Grafana",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg",
     category: "devops",
-    level: 90,
+    level: 70,
   },
   {
     name: "Dynatrace",
     icon: "https://cdn.simpleicons.org/dynatrace",
     category: "devops",
-    level: 90,
+    level: 80,
   },
   {
     name: "Bash Scripting",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
     category: "devops",
-    level: 90,
+    level: 80,
   },
 
   // Development
@@ -142,13 +130,13 @@ export const SKILLS = [
   name: "Node.js",
   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg",
   category: "development",
-  level: 90,
+  level: 80,
 },
 {
   name: "React",
   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   category: "development",
-  level: 90,
+  level: 80,
 },
 
  // Databases
@@ -156,13 +144,13 @@ export const SKILLS = [
     name: "MongoDB",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
     category: "database",
-    level: 90,
+    level: 80,
   },
   {
     name: "MySQL",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
     category: "database",
-    level: 90,
+    level: 80,
   },
 ];
 
@@ -233,13 +221,13 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: 'Hyderabad, Telangana, India',
-  phoneNo: '+91 **********',
-  email: 'neerajnakka.n@gmail.com',
+  address: 'Mamourah, Alexandria, Egypt',
+  phoneNo: '+20 1143387778',
+  email: 'abdelrahmanhassanwork1@gmail.com',
   social: {
-    github: 'https://github.com/neerajnakka',
-    linkedin: 'https://linkedin.com/in/neerajchandran',
-    twitter: 'https://twitter.com/neerajnakka',
+    github: 'https://github.com/bbodda123',
+    linkedin: 'https://www.linkedin.com/in/abdelrahman-hassan-251714213/',
+    twitter: '',
   }
 };
 

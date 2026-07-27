@@ -21,57 +21,100 @@ export const Home = () => {
       <Grid3DBackground />
       
       {/* Main Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center relative z-10">
+      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-7xl mx-auto w-full relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-8"
+            className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-16 items-center"
           >
-            {/* Terminal prompt */}
-            <div className="font-mono text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide">
-              <span className="text-accent-500 mr-3">$</span>
-              <span className="text-primary-500">whoami</span>
+            <div className="text-left space-y-8">
+              <div className="inline-flex items-center rounded-full border border-primary-500/30 bg-bg-elevated/70 px-4 py-2 font-mono text-sm tracking-[0.3em] text-primary-500 uppercase">
+                <span className="mr-2 text-accent-500">$</span>
+                available for impact
+              </div>
+
+              <div className="space-y-4">
+                <p className="font-mono text-lg sm:text-xl text-neutral-400">Hello, I am</p>
+                <h1 className="font-mono text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-[0.95]">
+                  <span className="block text-primary-500">Abdelrahman</span>
+                  <span className="block text-neutral-100">Hassan</span>
+                </h1>
+                <div className="font-mono text-2xl sm:text-3xl lg:text-4xl font-semibold text-accent-500">
+                  <Typewriter text="Cloud & DevOps Engineer" delay={80} />
+                  <span className="terminal-cursor ml-2" />
+                </div>
+              </div>
+
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 2 }}
+                className="text-lg sm:text-xl text-neutral-300 max-w-2xl leading-relaxed"
+              >
+                {HERO_CONTENT}
+              </motion.p>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 2.5 }}
+                className="flex flex-col sm:flex-row gap-4 pt-2"
+              >
+                <Link
+                  to="/projects"
+                  className="group inline-flex items-center justify-center px-8 py-4 border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-bg-surface transition-all duration-200 font-semibold tracking-wide rounded-lg shadow-glow hover:shadow-card-hover"
+                >
+                  <Code2 className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                  View Projects
+                </Link>
+                <Link
+                  to="/contact"
+                  className="group inline-flex items-center justify-center px-8 py-4 border-2 border-neutral-600 bg-neutral-800 text-neutral-200 hover:border-primary-500 hover:text-primary-500 transition-all duration-200 font-semibold tracking-wide rounded-lg"
+                >
+                  <ExternalLink className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                  Contact Me
+                </Link>
+              </motion.div>
             </div>
 
-            {/* Typewriter heading */}
-            <div className="font-mono text-4xl md:text-6xl lg:text-8xl font-bold tracking-tight text-primary-500">
-              <Typewriter text="DevOps & Cloud Engineer" delay={80} />
-              <span className="terminal-cursor ml-2" />
-            </div>
-
-            {/* Subtitle */}
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 2 }}
-              className="text-xl md:text-2xl text-neutral-200 max-w-4xl mx-auto leading-relaxed"
-            >
-              {HERO_CONTENT}
-            </motion.p>
-
-            {/* CTA Buttons */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 2.5 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8"
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative mx-auto lg:mx-0 max-w-md w-full"
             >
-              <Link
-                to="/projects"
-                className="group inline-flex items-center px-8 py-4 border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-bg-surface transition-all duration-200 font-semibold tracking-wide rounded-lg shadow-glow hover:shadow-card-hover"
-              >
-                <Code2 className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                View Projects
-              </Link>
-              <Link
-                to="/contact"
-                className="group inline-flex items-center px-8 py-4 border-2 border-neutral-600 bg-neutral-800 text-neutral-200 hover:border-primary-500 hover:text-primary-500 transition-all duration-200 font-semibold tracking-wide rounded-lg"
-              >
-                <ExternalLink className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                Contact Me
-              </Link>
+              <div className="absolute inset-0 rounded-full bg-primary-500/20 blur-3xl" />
+              <div className="relative overflow-hidden rounded-3xl border border-primary-500/30 bg-bg-elevated/80 p-4 shadow-glow backdrop-blur-sm">
+                <img
+                  src="/PersonalPhoto.jpeg"
+                  alt="Abdelrahman Hassan"
+                  className="w-full aspect-[4/5] object-cover rounded-2xl border border-neutral-700"
+                />
+                <div className="mt-4 space-y-3">
+                  <div className="flex items-center justify-between gap-3">
+                    <div>
+                      <p className="font-mono text-xs uppercase tracking-[0.35em] text-neutral-500">Profile</p>
+                      <h2 className="font-mono text-xl font-semibold text-primary-500">Abdelrahman Hassan</h2>
+                    </div>
+                    <span className="rounded-full border border-primary-500/40 px-3 py-1 text-xs font-mono text-accent-500">
+                      Online
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-3 text-sm">
+                    <div className="rounded-lg border border-neutral-700 bg-bg-page/70 p-3">
+                      <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-500">Focus</p>
+                      <p className="mt-1 font-mono text-neutral-100">Cloud & DevOps</p>
+                    </div>
+                    <div className="rounded-lg border border-neutral-700 bg-bg-page/70 p-3">
+                      <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-500">Location</p>
+                      <p className="mt-1 font-mono text-neutral-100">Remote</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </motion.div>
         </div>

@@ -6,7 +6,7 @@ import { Calendar, MapPin, Code, Zap } from 'lucide-react';
 export const About = () => {
 const timeline = [
   {
-    year: '2023 - Present',
+    year: '2025 July - Present',
     title: 'DevOps Engineer',
     company: '',
     description:
@@ -14,11 +14,11 @@ const timeline = [
     icon: Code,
   },
   {
-    year: '2019 - 2023',
+    year: '2022 - 2026',
     title: 'Computer Science Graduate',
-    company: 'CVR College Of Engineering',
+    company: 'Computer and Data Science Department, Alexandria University',
     description:
-      "Bachelor's degree with focus on software engineering and cloud computing.",
+      "Bachelor's degree in Computer Science, focusing on software development, algorithms, and cloud computing principles.",
     icon: Calendar,
   },
 ];
@@ -69,7 +69,7 @@ const timeline = [
                 </div>
                 <div className="space-y-4 text-neutral-200 leading-relaxed">
                   <Typewriter
-                    text="Hello, I'm Neeraj Chandra Nakka, and I build reliable cloud platforms that transform ideas into production-ready systems."
+                    text="Hello, I'm Abdelrahman Hassan, and I build reliable cloud platforms that transform ideas into production-ready systems."
                     delay={30}
                     className="text-primary-500 font-semibold block mb-4"
                   />
