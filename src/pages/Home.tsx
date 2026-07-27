@@ -29,6 +29,43 @@ export const Home = () => {
             transition={{ duration: 0.8 }}
             className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-16 items-center"
           >
+                      <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative mx-auto lg:mx-0 max-w-md w-full"
+            >
+              <div className="absolute inset-0 rounded-full bg-primary-500/20 blur-3xl" />
+              <div className="relative overflow-hidden rounded-3xl border border-primary-500/30 bg-bg-elevated/80 p-4 shadow-glow backdrop-blur-sm">
+                <img
+                  src="/PersonalPhoto.jpeg"
+                  alt="Abdelrahman Hassan"
+                  className="w-full aspect-[4/5] object-cover rounded-2xl border border-neutral-700"
+                />
+                <div className="mt-4 space-y-3">
+                  <div className="flex items-center justify-between gap-3">
+                    <div>
+                      <p className="font-mono text-xs uppercase tracking-[0.35em] text-neutral-500">Profile</p>
+                      <h2 className="font-mono text-xl font-semibold text-primary-500">Abdelrahman Hassan</h2>
+                    </div>
+                    <span className="rounded-full border border-primary-500/40 px-3 py-1 text-xs font-mono text-accent-500">
+                      Online
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-3 text-sm">
+                    <div className="rounded-lg border border-neutral-700 bg-bg-page/70 p-3">
+                      <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-500">Focus</p>
+                      <p className="mt-1 font-mono text-neutral-100">Cloud & DevOps</p>
+                    </div>
+                    <div className="rounded-lg border border-neutral-700 bg-bg-page/70 p-3">
+                      <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-500">Location</p>
+                      <p className="mt-1 font-mono text-neutral-100">Remote</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
             <div className="text-left space-y-8">
               <div className="inline-flex items-center rounded-full border border-primary-500/30 bg-bg-elevated/70 px-4 py-2 font-mono text-sm tracking-[0.3em] text-primary-500 uppercase">
                 <span className="mr-2 text-accent-500">$</span>
@@ -79,43 +116,7 @@ export const Home = () => {
               </motion.div>
             </div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative mx-auto lg:mx-0 max-w-md w-full"
-            >
-              <div className="absolute inset-0 rounded-full bg-primary-500/20 blur-3xl" />
-              <div className="relative overflow-hidden rounded-3xl border border-primary-500/30 bg-bg-elevated/80 p-4 shadow-glow backdrop-blur-sm">
-                <img
-                  src="/PersonalPhoto.jpeg"
-                  alt="Abdelrahman Hassan"
-                  className="w-full aspect-[4/5] object-cover rounded-2xl border border-neutral-700"
-                />
-                <div className="mt-4 space-y-3">
-                  <div className="flex items-center justify-between gap-3">
-                    <div>
-                      <p className="font-mono text-xs uppercase tracking-[0.35em] text-neutral-500">Profile</p>
-                      <h2 className="font-mono text-xl font-semibold text-primary-500">Abdelrahman Hassan</h2>
-                    </div>
-                    <span className="rounded-full border border-primary-500/40 px-3 py-1 text-xs font-mono text-accent-500">
-                      Online
-                    </span>
-                  </div>
 
-                  <div className="grid grid-cols-2 gap-3 text-sm">
-                    <div className="rounded-lg border border-neutral-700 bg-bg-page/70 p-3">
-                      <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-500">Focus</p>
-                      <p className="mt-1 font-mono text-neutral-100">Cloud & DevOps</p>
-                    </div>
-                    <div className="rounded-lg border border-neutral-700 bg-bg-page/70 p-3">
-                      <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-500">Location</p>
-                      <p className="mt-1 font-mono text-neutral-100">Remote</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
           </motion.div>
         </div>
       </section>
